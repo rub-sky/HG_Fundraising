@@ -1,0 +1,56 @@
+.content_container {
+    width: 100%;
+    padding: 20px;
+}
+
+.bar_container {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.bar text {
+    stroke: #000;
+    fill: #000;
+    text-anchor: middle;
+}
+
+/*====== Bar Chart Styles ======= */
+.bar {
+    fill: #78c9b8;
+    fill-opacity: 1.0;
+}
+
+.bar:hover {
+    fill: #a54344;
+}
+
+.bar-group > .bar-set > .bar-percent{
+    text-anchor: middle;
+    font-size: 0.75em;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #cfcfcf;
+    shape-rendering: crispEdges;
+}
+
+.axis-x path {
+    /*display: none;*/
+}
+
+.axis-y path {
+
+}
+
+/* ====== Arc Chart Styles ===== */
+.arc text {
+    font: 10px sans-serif;
+    text-anchor: middle;
+    font-weight: bold;
+}
+
+.arc path {
+    stroke: #fff;
+}
