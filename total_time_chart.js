@@ -40,6 +40,7 @@ d3.csv("./TotalCollected.csv",
             .append("text")
             .attr("transform", "rotate(-90)")
             .attr("y", 0)
+            .attr("x", 100)
             .attr("dy", "100px")
             .attr("text-anchor", "end")
             .text("Amount Collected");
