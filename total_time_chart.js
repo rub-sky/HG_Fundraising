@@ -1,7 +1,7 @@
 var svgBarGraph = d3.select("svg.svgBarGraph");
 
-var sbgWidth = 960;
-var sbgHeight = 500;
+var sbgWidth = 500;
+var sbgHeight = 300;
 var totalGoal = 440000; // Total Goal to collect
 
 var svg = d3.select("div.bar_container");
