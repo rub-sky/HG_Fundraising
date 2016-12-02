@@ -12,12 +12,11 @@ var svg = d3.select("div.pie_container").append("canvas")
 var canvas = document.querySelector("canvas.arcCanvas");
 var context = canvas.getContext("2d");
 
-var color = ["#1497B4", "#cfcfcf"];
+var color = ["#dfdfdf", "#1497B4"];
 
 var arc = d3.arc()
     .outerRadius(radius - 10)
     .innerRadius(radius - 70)
-    .padAngle(0.01)
     .context(context);
 
 var labelArc = d3.arc()
@@ -57,10 +56,23 @@ d3.csv("./TotalPieData.csv", function(error, data) {
 
     context.textAlign = "center";
     context.textBaseline = "middle";
-    context.fillStyle = "#000";
-    context.fontWeight = "bold";
+    context.fillStyle = "#fff";
+    context.font = "bold 0.7em Sans-Serif";
+
     arcs.forEach(function(d) {
         var c = labelArc.centroid(d);
-        context.fillText(d.data.CollectedAmount, c[0], c[1]);
+        context.fillText('$' + d.data.CollectedAmount.toLocaleString(), c[0], c[1]);
     });
-});
+
+    // Add a percentage in the middle
+    context.font = "bold 1.25em Sans-Serif";
+    context.fillStyle = "#6f6f6f";
+    context.fillText((((data[1].CollectedAmount)/440000)*100).toFixed(0) + '%', 0, 3);
+})
+
+function displayText() {
+    context.save();
+    context.font
+}
+
+;
