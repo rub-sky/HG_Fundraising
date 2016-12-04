@@ -109,3 +109,28 @@ h1, h2, h3, h4, h5 {
     display: block;
     width: 0;
 }
+
+/* ======= Key Colors ===== */
+.key-item-container {
+    font-family: sans-serif;
+    text-align: left;
+    font-size: .75em;
+}
+
+.key-color {
+    float: left;
+    border: 0px solid #cfcfcf;
+    background: #1497B4;
+
+    width: 15px;
+    height: 15px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.key-text {
+    position: absolute;
+    padding: 1px 7px;
+}
