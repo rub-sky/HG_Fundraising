@@ -70,18 +70,22 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ======= SVG Info Bubble ====== */
-.svg-info-bubble {
+.svg-info-bubble-cont {
+
+}
+
+.svg-info-bubble-rect {
     fill: #fff;
-    padding: 5px 7px;
+    padding: 3px 5px;
     stroke: #cfcfcf;
     stroke-width:1px;
 }
 
 .svg-info-bubble-text {
-    stroke: #9f9f9f;
+    fill: #0f0f0f;
     font: 10px sans-serif;
-    text-anchor: middle;
     font-weight: bold;
+    text-anchor: middle;
 }
 
 /* ======= Info Bubble ====== */
