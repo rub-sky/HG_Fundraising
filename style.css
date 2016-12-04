@@ -64,3 +64,48 @@ h1, h2, h3, h4, h5 {
 .arc path {
     stroke: #fff;
 }
+
+/* ======= Info Bubble ====== */
+
+.info-bubble {
+    position: relative;
+    z-index: 999;
+    padding: 7px 5px;
+    margin: 1em 0 3em;
+    border: 1px solid #cfcfcf;
+    color: #333;
+    background: #fff;
+
+    font-family: sans-serif;
+    text-align: center;
+    font-size: .75em;
+    width: 100px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.info-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 40px;
+    border-width: 11px 11px 0;
+    border-style: solid;
+    border-color: #cfcfcf transparent;
+    display: block;
+    width: 0;
+}
+
+.info-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 43px;
+    border-width: 8px 8px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
