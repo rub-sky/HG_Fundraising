@@ -1,8 +1,10 @@
 body {
     font-family: SansSerif;
+    background-color: #3f3f3f;
 }
 
 h1, h2, h3, h4, h5 {
+    color: #cfcfcf;
     font-family: sans-serif;
     border-bottom: 1px solid #dfdfdf;
 }
@@ -16,18 +18,28 @@ h1, h2, h3, h4, h5 {
     padding: 20px;
 }
 
-.bar_container {
+.bar-container {
     width: 100%;
     font-family: sans-serif;
 }
 
 .bar text {
-    stroke: #000;
-    fill: #000;
+    stroke: #cfcfcf;
+    fill: #cfcfcf;
     text-anchor: middle;
 }
 
 /*====== Bar Chart Styles ======= */
+.chart-item-container {
+    display: inline;
+    float: left;
+}
+
+/*====== Bar Chart Styles ======= */
+.bar-container {
+    padding: 10px 25px;
+}
+
 .bar {
     fill: #78c9b8;
     fill-opacity: 1.0;
@@ -59,10 +71,15 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ====== Arc Chart Styles ===== */
+.pie-container {
+    padding: 10px 25px;
+}
+
 .arc text {
     font: 10px sans-serif;
     text-anchor: middle;
     font-weight: bold;
+    color: #cfcfcf;
 }
 
 .arc path {
@@ -91,6 +108,7 @@ h1, h2, h3, h4, h5 {
 /* ======= Info Bubble ====== */
 
 .info-bubble {
+    visibility: hidden;
     position: relative;
     z-index: 999;
     padding: 7px 5px;
@@ -157,6 +175,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .key-text {
+    color: #cfcfcf;
     text-align: left;
     padding: 1px 7px;
     display: inline-block;
@@ -167,5 +186,5 @@ h1, h2, h3, h4, h5 {
 }
 
 .inactive {
-    background: #cfcfcf;
+    background: #afafaf;
 }
