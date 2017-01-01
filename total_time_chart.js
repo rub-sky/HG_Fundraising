@@ -6,7 +6,7 @@ var ibHeight = 30;
 var ibWeight = 100;
 var totalGoal = 440000; // Total Goal to collect
 
-var svg = d3.select("div.bar_container");
+var svg = d3.select("div.bar-container");
 var margin = {top: 20, right: 20, bottom: 30, left: 60};
 
 var width = svgBarGraph.attr("width") - margin.left - margin.right;
